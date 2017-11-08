@@ -1,4 +1,5 @@
 import numpy as np
+from game.tile import Tile
 
 class Board(object):
 
@@ -7,17 +8,7 @@ class Board(object):
         Constructor
         :param dims: (Int, Int)
         """
-        self._board = np.array(dims, dtype=Tile.dt)
-
-    def __getitem__(self, pos):
-        try:
-            return self.board[pos]
-        except (TypeError, IndexError) as e:
-            pass
-
-    @property
-    def board(self):
-        return self._board
+        self._board = np.empty(dims, dtype=Tile.dt)
 
     def __str__(self):
         """
@@ -26,24 +17,27 @@ class Board(object):
         """
         return np.array_str(self._board)
 
-    def isFull(self):
+    @property
+    def board(self):
+        return self._board
+
+    def is_full(self):
         """
         Determines whether all squares are filled on the board
         :return:
         """
         pass
 
-
-    def isOpen(self, loc):
+    def is_open(self, loc):
         """
         :param tile:
         :return:
         """
         pass
 
-    def injectRandom(self):
+    def inject_random(self):
         """
-        Adds random tile with uniform  sample
+        Adds random tile with uniform sample
         :return:
         """
         pass

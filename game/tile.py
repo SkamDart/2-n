@@ -1,30 +1,40 @@
 import numpy as np
 from game.color import Color
 
+
 class Tile(object):
 
-    dt = np.dtype([
-        ('val', np.uint16),
-        ('isVisible', np.bool),
-        ('color', np.uint64)
-    ])
+    dt = np.dtype({'names': ['val', 'is_visible', 'color'],
+                   'formats': [np.uint16, np.uint16, np.uint64],
+                   'titles': ['Tile Value', 'Tile Visibility', 'Tile Color']
+                   })
 
     def __init__(self):
-        self.value = 1
-        self.isVisible = False
-        self.color = Color.RED
+        self._val = 1
+        self._is_visible = False
+        self._color = Color.RED
 
     def __str__(self):
-        return self.value
+        return self._val
 
-    def increment(self):
-        self.value *= 2
+    @property
+    def val(self):
+        """
+        :return:
+        """
+        return self._val
 
-    def decrement(self):
-        self.value /= 2
+    @property
+    def is_visible(self):
+        """
+        :return:
+        """
+        return self._is_visible
 
-    def changeColor(self, color):
-        self.color = color
+    @property
+    def color(self):
+        """
 
-
-
+        :return:
+        """
+        return self._color

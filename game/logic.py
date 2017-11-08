@@ -1,6 +1,6 @@
 from game.board import Board
 
-class Game():
+class Logic():
 
     def __init__(self, b):
         """
@@ -13,7 +13,7 @@ class Game():
         Determines whether a game is over or not
         :return:
         """
-        return self._board.isFull()
+        return self._board.is_full()
 
     def start_game(self, n):
         """
@@ -26,3 +26,4 @@ class Game():
         """
         :return:
         """
+        pass
