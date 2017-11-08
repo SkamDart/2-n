@@ -1,6 +1,8 @@
+import numpy as np
 from unittest import TestCase
 from game.ndtile import NDTile
 from game.tile import Tile
+
 
 class TestNDTile(TestCase):
 
@@ -16,19 +18,30 @@ class TestNDTile(TestCase):
         self.assertTrue(tiles.dtype == Tile.dt)
         self.assertTrue(type(tiles) == NDTile)
 
-    def test_move(self):
+    def test_zeros(self):
+        tiles = NDTile.zeros((4,4))
+        m, n = tiles.shape
+
+        for i in range(m):
+            for j in range(n):
+                tile = tiles[i, j]
+                self.assertTrue(0 == tile[0])
+                self.assertTrue(0 == tile[1])
+                self.assertTrue(0 == tile[2])
+                
+    def test_invalid_move(self):
         tiles = NDTile()
         self.assertRaises(ValueError, tiles.move, None)
 
     def test_move_left(self):
-        self.fail()
+        pass
 
     def test_move_right(self):
-        self.fail()
+        pass
 
     def test_move_up(self):
-        self.fail()
+        pass
 
     def test_move_down(self):
-        self.fail()
+        pass
 

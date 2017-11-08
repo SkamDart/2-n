@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a76d498c-bea8-40ba-803e-abb3254ff0ad" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/2pyn/game/Move.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/cdart2.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/cdart2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/ndtile.py" afterPath="$PROJECT_DIR$/game/ndtile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/game/test_NDTile.py" afterPath="$PROJECT_DIR$/test/game/test_NDTile.py" />
@@ -16,13 +17,14 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_game.coverage" NAME="Unittests in game Coverage Results" MODIFIED="1510117100828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
-    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_board_py.coverage" NAME="Unittests in test_board.py Coverage Results" MODIFIED="1510118642518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_board_py.coverage" NAME="Unittests in test_board.py Coverage Results" MODIFIED="1510180015284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/204py$board.coverage" NAME="board Coverage Results" MODIFIED="1510116138083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Nosetests_for_test_NDTile_TestNDTile_test_zeros.coverage" NAME="Nosetests for test_NDTile.TestNDTile.test_zeros Coverage Results" MODIFIED="1510179999682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/204py$tile.coverage" NAME="tile Coverage Results" MODIFIED="1510116198525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
-    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_NDTile_py.coverage" NAME="Unittests in test_NDTile.py Coverage Results" MODIFIED="1510119623250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_board_TestBoard_test_board.coverage" NAME="Unittests for test_board.TestBoard.test_board Coverage Results" MODIFIED="1510161467914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_NDTile_py.coverage" NAME="Unittests in test_NDTile.py Coverage Results" MODIFIED="1510181688937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$tile__1_.coverage" NAME="tile (1) Coverage Results" MODIFIED="1510116499268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
-    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_NDTile_TestNDTile_test_NDTile.coverage" NAME="Unittests for test_NDTile.TestNDTile.test_NDTile Coverage Results" MODIFIED="1510165485970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_NDTile_TestNDTile_test_NDTile.coverage" NAME="Unittests for test_NDTile.TestNDTile.test_NDTile Coverage Results" MODIFIED="1510179995385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
@@ -31,8 +33,8 @@
           <file leaf-file-name="ndtile.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/ndtile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-867">
-                  <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+                <state relative-caret-position="238">
+                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -63,7 +65,7 @@
           <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/game/board.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="708">
+                <state relative-caret-position="861">
                   <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
@@ -89,10 +91,10 @@
           <file leaf-file-name="test_NDTile.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                <state relative-caret-position="425">
+                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#29#0" expanded="true" />
+                    <element signature="e#0#18#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -101,7 +103,7 @@
           <file leaf-file-name="test_board.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
+                <state relative-caret-position="34">
                   <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
@@ -120,6 +122,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>p</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -238,7 +245,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile">
+  <component name="RunManager" selected="Python tests.Unittests in test_NDTile.py">
+    <configuration name="Nosetests for test_NDTile.TestNDTile.test_zeros" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="204py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_NDTile.TestNDTile.test_zeros&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,21 +291,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_board.TestBoard.test_board&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests in game" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="204py" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/game&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unittests in test_NDTile.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -315,19 +323,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests for test_NDTile.TestNDTile.test_zeros" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests for test_NDTile.TestNDTile.test_zeros" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
       </list>
     </recent_temporary>
   </component>
@@ -345,42 +353,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.08 at 12h 22m 08s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.08 at 12h 23m 24s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.08 at 12h 24m 00s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.08 at 12h 24m 23s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.08 at 12h 24m 46s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_board_TestBoard_test_board - 2017.11.08 at 11h 17m 48s.xml">
-      <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_game - 2017.11.07 at 22h 58m 21s.xml">
-      <configuration name="Unittests in game" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.07 at 23h 40m 10s.xml">
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 44m 28s.xml">
       <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.07 at 23h 40m 23s.xml">
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 46m 35s.xml">
       <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_board_py - 2017.11.07 at 23h 24m 02s.xml">
-      <configuration name="Unittests in test_board.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 46m 45s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 48m 46s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 49m 35s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 52m 22s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 53m 19s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 06s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 24s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 49s.xml">
+      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="110" y="24" width="1930" height="1037" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18091762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12043796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,7 +443,7 @@
         <state relative-caret-position="136">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -499,7 +507,7 @@
         <state relative-caret-position="136">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -544,7 +552,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -574,7 +582,7 @@
         <state relative-caret-position="136">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,7 +592,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,7 +652,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -762,7 +770,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -783,7 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="34">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -809,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
+        <state relative-caret-position="861">
           <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -819,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/ndtile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -829,10 +837,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -76,6 +76,25 @@ class NDTile(np.ndarray):
         else:
             raise ValueError('Invalid Tile Move')
 
+    @staticmethod
+    def zeros(shape):
+        """Zeros out all elements in the ndtile tuple
+
+        Args:
+            shape: dimensions of matrix
+
+        Returns:
+            zero'd out matrix with provided shape
+        """
+        # return map(lambda x: (0, ) * len(x), np.nditer(NDTile(shape), flags=['refs_ok']))
+
+        m, n = shape
+        tiles = NDTile(shape)
+        for i in range(n):
+            for j in range(m):
+                tiles[i, j] = (0,) * len(tiles[i, j])
+        return tiles
+
     def move_left(self):
         """
 
