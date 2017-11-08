@@ -13,7 +13,7 @@ class NDTile(np.ndarray):
     It also triggers a call to NDTile.__array_finalize__
     """
 
-    def __new__(subtype, shape, buffer=None, offset=0,
+    def __new__(subtype, shape=(4,4), buffer=None, offset=0,
                 strides=None, order=None, info=None):
         """
 
