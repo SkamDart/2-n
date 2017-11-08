@@ -9,6 +9,7 @@ class Board(object):
         :param dims: (Int, Int)
         """
         self._board = np.empty(dims, dtype=Tile.dt)
+        self._dims = dims
 
     def __str__(self):
         """
@@ -21,6 +22,10 @@ class Board(object):
     def board(self):
         return self._board
 
+    @property
+    def dims(self):
+        return self._dims
+
     def is_full(self):
         """
         Determines whether all squares are filled on the board
@@ -30,7 +35,7 @@ class Board(object):
 
     def is_open(self, loc):
         """
-        :param tile:
+        :param loc:
         :return:
         """
         pass

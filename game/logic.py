@@ -4,26 +4,30 @@ class Logic():
 
     def __init__(self, b):
         """
-        :param b:
+
+        Args:
+            b:
         """
         self._board = b
 
     def is_over(self):
         """
-        Determines whether a game is over or not
-        :return:
+
+        Returns:
+
         """
         return self._board.is_full()
 
     def start_game(self, n):
         """
-        :param n:
-        :return:
+
+        Args:
+            n:
         """
         pass
 
     def game_loop(self):
         """
-        :return:
+
         """
         pass

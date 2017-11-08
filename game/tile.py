@@ -10,24 +10,36 @@ class Tile(object):
                    })
 
     def __init__(self):
+        """
+
+        """
         self._val = 1
         self._is_visible = False
         self._color = Color.RED
 
     def __str__(self):
+        """
+
+        Returns:
+
+        """
         return self._val
 
     @property
     def val(self):
         """
-        :return:
+
+        Returns:
+
         """
         return self._val
 
     @property
     def is_visible(self):
         """
-        :return:
+
+        Returns:
+
         """
         return self._is_visible
 
@@ -35,6 +47,7 @@ class Tile(object):
     def color(self):
         """
 
-        :return:
+        Returns:
+
         """
         return self._color

@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d498c-bea8-40ba-803e-abb3254ff0ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/game/test_NDTile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/cdart2.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/2pyn/game/Move.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/204py.iml" afterPath="$PROJECT_DIR$/.idea/204py.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/board.py" afterPath="$PROJECT_DIR$/game/board.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/logic.py" afterPath="$PROJECT_DIR$/game/logic.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/ndtile.py" afterPath="$PROJECT_DIR$/game/ndtile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tile.py" afterPath="$PROJECT_DIR$/game/tile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/game/test_board.py" afterPath="$PROJECT_DIR$/test/game/test_board.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +24,8 @@
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_board_py.coverage" NAME="Unittests in test_board.py Coverage Results" MODIFIED="1510118642518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/204py$board.coverage" NAME="board Coverage Results" MODIFIED="1510116138083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
     <SUITE FILE_PATH="coverage/204py$tile.coverage" NAME="tile Coverage Results" MODIFIED="1510116198525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
-    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_board_TestBoard_test_board.coverage" NAME="Unittests for test_board.TestBoard.test_board Coverage Results" MODIFIED="1510118765299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_NDTile_py.coverage" NAME="Unittests in test_NDTile.py Coverage Results" MODIFIED="1510119623250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_board_TestBoard_test_board.coverage" NAME="Unittests for test_board.TestBoard.test_board Coverage Results" MODIFIED="1510161467914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$tile__1_.coverage" NAME="tile (1) Coverage Results" MODIFIED="1510116499268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_NDTile_TestNDTile_test_NDTile.coverage" NAME="Unittests for test_NDTile.TestNDTile.test_NDTile Coverage Results" MODIFIED="1510119597013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
   </component>
@@ -32,11 +33,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="tile.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/game/tile.py">
+          <file leaf-file-name="ndtile.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/game/ndtile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                <state relative-caret-position="-391">
+                  <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -44,33 +45,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="color.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/game/color.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="logic.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/game/logic.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
-                  <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_board.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
+          <file leaf-file-name="move.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/move.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/board.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="562">
+                  <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
                   <folding>
-                    <element signature="e#0#29#0" expanded="true" />
+                    <element signature="e#0#18#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -79,48 +80,34 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="tile.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/game/tile.py">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="test_tile.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/game/test_tile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="68">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/game/board.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ndtile.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/game/ndtile.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_NDTile.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="test_NDTile.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
                   <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_board.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -161,13 +148,15 @@
         <option value="$PROJECT_DIR$/game/test_tile.py" />
         <option value="$PROJECT_DIR$/game/test_board.py" />
         <option value="$PROJECT_DIR$/game/test_game.py" />
+        <option value="$PROJECT_DIR$/game/test_NDTile.py" />
+        <option value="$PROJECT_DIR$/test/game/test_NDTile.py" />
+        <option value="$PROJECT_DIR$/game/board.py" />
+        <option value="$PROJECT_DIR$/test/game/test_tile.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/game/logic.py" />
         <option value="$PROJECT_DIR$/game/tile.py" />
-        <option value="$PROJECT_DIR$/game/board.py" />
-        <option value="$PROJECT_DIR$/game/ndtile.py" />
-        <option value="$PROJECT_DIR$/game/test_NDTile.py" />
         <option value="$PROJECT_DIR$/test/game/test_board.py" />
-        <option value="$PROJECT_DIR$/test/game/test_NDTile.py" />
+        <option value="$PROJECT_DIR$/game/ndtile.py" />
       </list>
     </option>
   </component>
@@ -198,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,14 +216,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -253,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_NDTile.py">
+  <component name="RunManager" selected="Python tests.Unittests for test_board.TestBoard.test_board">
     <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,9 +327,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard.test_board" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_NDTile.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_NDTile.TestNDTile.test_NDTile" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
       </list>
@@ -360,12 +349,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.07 at 23h 36m 27s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.07 at 23h 36m 34s.xml">
-      <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_NDTile_TestNDTile_test_NDTile - 2017.11.07 at 23h 39m 57s.xml">
       <configuration name="Unittests for test_NDTile.TestNDTile.test_NDTile" configurationId="tests" />
     </history-entry>
@@ -373,6 +356,15 @@
       <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_for_test_board_TestBoard_test_board - 2017.11.07 at 23h 26m 05s.xml">
+      <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard_test_board - 2017.11.08 at 11h 15m 51s.xml">
+      <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard_test_board - 2017.11.08 at 11h 17m 08s.xml">
+      <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard_test_board - 2017.11.08 at 11h 17m 48s.xml">
       <configuration name="Unittests for test_board.TestBoard.test_board" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_game - 2017.11.07 at 22h 58m 21s.xml">
@@ -390,7 +382,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="110" y="24" width="1930" height="1037" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18091762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -424,6 +415,72 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game/color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/tile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/ndtile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/tile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -555,19 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,23 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-78">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/move.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_tile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,23 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,17 +645,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="807" column="8" lean-forward="false" selection-start-line="807" selection-start-column="8" selection-end-line="807" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_tile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="562">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,32 +710,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/ndtile.py">
+    <entry file="file://$PROJECT_DIR$/game/color.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
+    <entry file="file://$PROJECT_DIR$/game/ndtile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="-391">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
