@@ -1,21 +1,30 @@
 import numpy as np
 
-class Board():
+class Board(object):
 
     def __init__(self, dims=(4,4)):
         """
         Constructor
-        :param dim: (Int, Int)
+        :param dims: (Int, Int)
         """
-        self.board = np.zeros(dims)
-        self.shape = dims
+        self._board = np.array(dims, dtype=Tile.dt)
+
+    def __getitem__(self, pos):
+        try:
+            return self.board[pos]
+        except (TypeError, IndexError) as e:
+            pass
+
+    @property
+    def board(self):
+        return self._board
 
     def __str__(self):
         """
         String representation for board
         :return:
         """
-        return np.array_str(self.board)
+        return np.array_str(self._board)
 
     def isFull(self):
         """
@@ -23,6 +32,7 @@ class Board():
         :return:
         """
         pass
+
 
     def isOpen(self, loc):
         """
@@ -38,10 +48,10 @@ class Board():
         """
         pass
 
-    def shift(self, direction):
+    def shift(self, move):
         """
         Shifts a board one of the directions
-        :see Move.py
+        :see move.py
         :param direction:
         :return:
         """

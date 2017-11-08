@@ -1,0 +1,1 @@
+all = ["board", "color", "logic", "move", "ndtile", "tile"]
