@@ -5,7 +5,9 @@ from game.move import Move
 
 class NDTile(np.ndarray):
     """
-    Create the ndarray instance of our type, given the usual
+    Subclass of ndarray. Allows us to create and use typical np ndarray
+    functionality with a custom data type.
+    Create the ndarray instance of our type Tile, given the usual
     ndarray input arguments.  This will call the standard
     ndarray constructor, but return a ndtile instance.
     It also triggers a call to NDTile.__array_finalize__
