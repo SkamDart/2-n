@@ -8,6 +8,8 @@ class Tile(object):
                    'formats': [np.uint16, np.uint16, np.uint64],
                    'titles': ['Tile Value', 'Tile Visibility', 'Tile Color']
                    })
+    base_tile = (2, 0, 0)
+    blank_tile = (0, 0, 0)
 
     def __init__(self):
         """

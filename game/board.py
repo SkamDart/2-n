@@ -1,6 +1,6 @@
 import numpy as np
 from game.ndtile import NDTile
-
+from game.tile import Tile
 
 class Board(object):
 
@@ -32,7 +32,12 @@ class Board(object):
         Determines whether all squares are filled on the board
         :return:
         """
-        pass
+        m, n = self.dims
+        for i in range(m):
+            for j in range(n):
+                if Tile.blank_tile[0] == self.tiles[i, j][0]:
+                    return False
+        return True
 
     def base_tile(self):
         """
@@ -51,9 +56,7 @@ class Board(object):
         :param loc:
         :return:
         """
-        score = self.get_tile_score(loc)
-        print ('tile score ', score)
-        return True
+        return 0 == self.get_tile_score(loc)
 
     def inject_random(self):
         """
@@ -65,14 +68,15 @@ class Board(object):
         dx = self.dims[0]
         dy = self.dims[1]
         pt = (x, y)
+
         while True:
             tx = np.random.randint(x, dx, 1)[0]
             ty = np.random.randint(y, dy, 1)[0]
             pt = (tx, ty)
-            print ('pt ', pt)
             if self.is_open(pt):
                 break
 
+        self.set_tile(pt, Tile.base_tile)
 
     def shift(self, move):
         """ Shifts a board one of the directions

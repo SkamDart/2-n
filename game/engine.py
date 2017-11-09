@@ -87,15 +87,18 @@ class Engine:
             n:
         """
         self.board.inject_random()
-        self.board.inject_random()
-        while self.is_over() is not True:
+        while True:
+            self.board.inject_random()
             self.print_board()
-            move = input('Enter Move')
+            if self.board.is_full():
+                break
 
+            move = input('\n')
 
+        print ('Game Over!')
 
 if __name__ == '__main__':
-    shape = (4, 4)
+    shape = (5, 5)
     n = 2048
     board = Board(shape)
     engine = Engine(board, n)
