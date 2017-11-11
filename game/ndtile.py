@@ -31,7 +31,6 @@ class NDTile(np.ndarray):
         dtype = Tile.dt
         obj = np.ndarray.__new__(subtype, shape, dtype, buffer, offset, strides,
                                  order)
-        obj.is_running = True
         return obj
 
     def __array_finalize__(self, obj):
@@ -59,23 +58,6 @@ class NDTile(np.ndarray):
 
         self.is_running = getattr(obj, 'is_running', True)
 
-    def move(self, direction):
-        """
-
-        Args:
-            direction:
-        """
-        if direction == Move.UP:
-            self.move_up()
-        elif direction == Move.DOWN:
-            self.move_down()
-        elif direction == Move.LEFT:
-            self.move_left()
-        elif direction == Move.RIGHT:
-            self.move_right()
-        else:
-            raise ValueError('Invalid Tile Move')
-
     @staticmethod
     def zeros(shape):
         """Zeros out all elements in the ndtile tuple
@@ -95,27 +77,100 @@ class NDTile(np.ndarray):
                 tiles[i, j] = (0,) * len(tiles[i, j])
         return tiles
 
-    def move_left(self):
+    def get_score(self, pos):
+        """
+
+        Args:
+            pos:
+
+        Returns:
+
+        """
+        try:
+            self.item(pos)[0]
+        except IndexError as err:
+            print (err.args)
+            raise ValueError('Invalid Index')
+
+    def get_color(self, pos):
+        """
+
+        Args:
+            pos:
+
+        Returns:
+
+        """
+        try:
+            self.item(pos)[1]
+        except IndexError as err:
+            print (err.args)
+            raise ValueError('Invalid Index')
+
+    def is_open(self, pt):
+        """
+        Args:
+            pt:
+
+        Returns:
+
+        """
+        return self.item(pt)[0] == Tile.blank_tile[0]
+
+    def shift_left(self):
+        """
+
+        Returns:
+
+        """
+        m = self.shape[0]
+        n = self.shape[1]
+
+    def shift_right(self):
         """
 
         """
         pass
 
-    def move_right(self):
+    def shift_down(self):
         """
 
         """
         pass
 
-    def move_down(self):
+    def shift_up(self):
         """
 
         """
         pass
 
-    def move_up(self):
+    def set_tile(self, pt, val):
         """
+        Args:
+            pt:
+            val:
+
+        Returns:
 
         """
-        pass
+        self.itemset(pt, val)
 
+    def inject_random(self):
+        """
+        Adds random tile with uniform sample
+        :return:
+        """
+        x = 0
+        y = 0
+        dx = self.shape[0]
+        dy = self.shape[1]
+        pt = None
+
+        while True:
+            tx = np.random.randint(x, dx, 1)[0]
+            ty = np.random.randint(y, dy, 1)[0]
+            pt = (tx, ty)
+            if self.is_open(pt):
+                break
+
+        self.set_tile(pt, Tile.base_tile)

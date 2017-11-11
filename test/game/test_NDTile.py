@@ -34,14 +34,14 @@ class TestNDTile(TestCase):
         self.assertRaises(ValueError, tiles.move, None)
 
     def test_move_left(self):
-        pass
+        self.fail()
 
     def test_move_right(self):
-        pass
+        self.fail()
 
     def test_move_up(self):
-        pass
+        self.fail()
 
     def test_move_down(self):
-        pass
+        self.fail()
 

@@ -1,8 +1,5 @@
-import sys
-import tty
-import termios
 from game.board import Board
-import numpy as np
+from game.move import Move
 
 
 class Engine:
@@ -26,32 +23,6 @@ class Engine:
         """
         return self._board
 
-    @property
-    def tiles(self):
-        """
-
-        Returns:
-
-        """
-        return self._tiles
-
-    @property
-    def end_score(self):
-        """
-
-        Returns:
-
-        """
-        return self._end_score
-
-    def is_over(self):
-        """Determines if game is over
-
-        Returns:
-
-        """
-        return self._board.is_full()
-
     @staticmethod
     def is_valid_score(m):
         """
@@ -64,42 +35,61 @@ class Engine:
         """
         return m
 
-    def print_board(self):
-        """ Removes none score components from board
-        Returns:
-        """
-        for i in range(len(self._tiles)):
-            for j in range(len(self._tiles[0])):
-                print(self._tiles[i, j][0], end=' ')
-            print('\n')
-
-    def get_move(self):
-        """
-
-        Returns:
-
-        """
-
     def start_game(self):
         """Game loop
 
         Args:
-            n:
         """
-        self.board.inject_random()
+        self.board.tiles.inject_random()
+
         while True:
-            self.board.inject_random()
-            self.print_board()
-            if self.board.is_full():
+            self.board.tiles.inject_random()
+            self.board.print()
+
+            if self.board.is_over:
                 break
 
             move = input('\n')
+            self.handle_move(move)
 
-        print ('Game Over!')
+        print('Game Over!')
+
+    def handle_move(self, move):
+        """
+
+        Args:
+            move:
+
+        Returns:
+
+        """
+        move_type = self.parse_move(move)
+        self.board.shift(move_type)
+
+    def parse_move(self, move):
+        """
+
+        Args:
+            move:
+
+        Returns:
+
+        """
+        if move == 'h':
+            return  Move.LEFT
+        elif move == 'j':
+            return Move.DOWN
+        elif move == 'k':
+            return Move.UP
+        elif move == 'l':
+            return Move.RIGHT
+        else:
+            return self.parse_move(input('Try Again\n'))
+
 
 if __name__ == '__main__':
     shape = (5, 5)
     n = 2048
-    board = Board(shape)
+    board = Board(n, shape)
     engine = Engine(board, n)
     engine.start_game()
