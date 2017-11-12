@@ -33,6 +33,10 @@ class Board(object):
         """
         return self._tiles
 
+    @tiles.setter
+    def tiles(self, tiles):
+        self._tiles = tiles
+
     @property
     def is_full(self):
         """
@@ -132,34 +136,55 @@ class Board(object):
                     tiles[i] = np.append(np.zeros(n - len(row)), row)
                 else:
                     tiles[i] = np.append(row, np.zeros(n - len(row)))
+        tiles = tiles.T
 
-    def shift_right(self):
+    def merge(self, axis=0):
         """
+        Args:
+            axis:
 
-        """
-        pass
-
-    def shift_down(self):
-        """
-
-        """
-        pass
-
-    def shift_up(self):
-        """
-
-        """
-        pass
-
-    def shift_left(self):
-        """
         Returns:
 
         """
-        tiles = self.tiles
-        # for i, row in enumerate(tiles):
+        for row in self.tiles:
+            self.merge_row(row, axis)
 
-        pass
+    def merge_row(self, row, axis=0):
+        """
+        TODO (REFACTOR, HACK)
+        Args:
+            row:
+            axis:
+
+        Returns:
+
+        """
+        b = len(row) - 1
+        can_merge = True
+        for i in range(b):
+            if row[i] == row[i + 1] and can_merge:
+                if axis == 0:
+                    row[i + 1] = 0
+                    row[i] *= 2
+                elif axis == 1:
+                    row[i] = 0
+                    row[i + 1] *= 2
+                can_merge = False
+                continue
+            can_merge = True
+
+    def merge_vertical(self, axis=0):
+        """
+
+        Returns:
+
+        """
+        self.tiles = self.tiles.T
+
+        for row in self.tiles:
+            self.merge_row(row, axis)
+
+        self.tiles = self.tiles.T
 
     def shift(self, direction):
         """
@@ -169,15 +194,19 @@ class Board(object):
         """
         if direction == Move.UP:
             self.vertical()
-            self.shift_up()
+            self.merge_vertical()
+            self.vertical()
         elif direction == Move.DOWN:
             self.vertical(1)
-            self.shift_down()
+            self.merge_vertical(1)
+            self.vertical(1)
         elif direction == Move.LEFT:
             self.move_zeros()
-            self.shift_left()
+            self.merge()
+            self.move_zeros()
         elif direction == Move.RIGHT:
             self.move_zeros(1)
-            self.shift_right()
+            self.merge(1)
+            self.move_zeros(1)
         else:
             raise ValueError('Invalid Tile Move')
