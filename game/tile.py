@@ -17,7 +17,6 @@ class Tile(object):
 
         """
         self._val = 1
-        self._color = Color.RED
 
     def __str__(self):
         """
@@ -36,11 +35,14 @@ class Tile(object):
         """
         return self._val
 
-    @property
-    def color(self):
+    @staticmethod
+    def set_color(n):
         """
+
+        Args:
+            n:
 
         Returns:
 
         """
-        return self._color
+        pass

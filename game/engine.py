@@ -35,18 +35,26 @@ class Engine:
         """
         return m
 
+    def is_over(self):
+        """
+
+        Returns:
+
+        """
+        return self.board.is_full
+
     def start_game(self):
         """Game loop
 
         Args:
         """
-        self.board.tiles.inject_random()
+        self.board.inject_random()
 
         while True:
-            self.board.tiles.inject_random()
+            self.board.inject_random()
             self.board.print()
 
-            if self.board.is_over:
+            if self.is_over():
                 break
 
             move = input('\n')
@@ -88,7 +96,7 @@ class Engine:
 
 
 if __name__ == '__main__':
-    shape = (5, 5)
+    shape = (4, 4)
     n = 2048
     board = Board(n, shape)
     engine = Engine(board, n)
