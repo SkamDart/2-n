@@ -71,10 +71,11 @@ class Engine:
         Returns:
 
         """
-        move_type = self.parse_move(move)
+        move_type = Engine.parse_move(move)
         self.board.shift(move_type)
 
-    def parse_move(self, move):
+    @classmethod
+    def parse_move(cls, move):
         """
 
         Args:
@@ -92,7 +93,7 @@ class Engine:
         elif move == 'l':
             return Move.RIGHT
         else:
-            return self.parse_move(input('Try Again\n'))
+            return Engine.parse_move(input('Try Again\n'))
 
 
 if __name__ == '__main__':

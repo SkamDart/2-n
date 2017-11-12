@@ -1,5 +1,4 @@
 import numpy as np
-from game.color import Color
 
 
 class Tile(object):

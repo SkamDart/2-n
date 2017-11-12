@@ -6,7 +6,6 @@ class TestBoard(TestCase):
         self.fail()
 
     def test_is_full(self):
-
         self.fail()
 
     def test_is_open(self):

@@ -1,8 +1,6 @@
 import numpy as np
 
 from game.move import Move
-from game.ndtile import NDTile
-from game.tile import Tile
 
 
 class Board(object):
@@ -188,7 +186,7 @@ class Board(object):
 
     def shift(self, direction):
         """
-
+        TODO (REFACTOR)
         Args:
             direction:
         """
