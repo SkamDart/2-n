@@ -8,12 +8,13 @@ from game.tile import Tile
 class Board(object):
 
     def __init__(self, goal=2048, shape=(4, 4)):
-        """
-        Constructor
-        :param shape: (Int, Int)
+        """Constructor
+
+        Args:
+            goal:
+            shape:
         """
         self._goal = goal
-        #self._tiles = NDTile.zeros(dims)
         self._tiles = np.zeros(shape, dtype=np.int)
 
     def __str__(self):
@@ -32,7 +33,6 @@ class Board(object):
         """
         return self._tiles
 
-
     @property
     def is_full(self):
         """
@@ -46,7 +46,7 @@ class Board(object):
         """ Removes none score components from board
         Returns:
         """
-        print (self.tiles)
+        print(self.tiles)
 
     def is_open(self, pt):
         """
@@ -73,16 +73,14 @@ class Board(object):
         y = 0
         dx = tiles.shape[0]
         dy = tiles.shape[1]
-        pt = None
 
         while True:
             tx = np.random.randint(x, dx, 1)[0]
             ty = np.random.randint(y, dy, 1)[0]
             pt = (tx, ty)
             if self.is_open(pt):
+                self.set_tile(pt, 2)
                 break
-
-        self.set_tile(pt, 2)
 
     def set_tile(self, pt, val):
         """
@@ -97,14 +95,35 @@ class Board(object):
 
     def move_zeros(self, axis=0):
         """
-
+        FIXME (REFACTOR)
         Returns:
 
         """
         tiles = self.tiles
-        m = tiles.shape[0]
+        #m = tiles.shape[0]
         n = tiles.shape[1]
         # n = tiles.shape[0] if axis == 0 else tiles.shape[1]
+
+        for i, row in enumerate(tiles):
+            if np.count_nonzero(row) != n:
+                row = np.array(list(filter(None, row)))
+                if axis == 1:
+                    tiles[i] = np.append(np.zeros(n - len(row)), row)
+                else:
+                    tiles[i] = np.append(row, np.zeros(n - len(row)))
+
+    def vertical(self, axis=0):
+        """
+        FIXME (REFACTOR)
+        Args:
+            axis:
+
+        Returns:
+
+        """
+        tiles = self.tiles.T
+
+        n = tiles.shape[1]
 
         for i, row in enumerate(tiles):
             if np.count_nonzero(row) != n:
@@ -149,8 +168,10 @@ class Board(object):
             direction:
         """
         if direction == Move.UP:
+            self.vertical()
             self.shift_up()
         elif direction == Move.DOWN:
+            self.vertical(1)
             self.shift_down()
         elif direction == Move.LEFT:
             self.move_zeros()
