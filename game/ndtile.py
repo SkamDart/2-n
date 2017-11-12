@@ -117,32 +117,6 @@ class NDTile(np.ndarray):
         """
         return self.item(pt)[0] == Tile.blank_tile[0]
 
-    def shift_left(self):
-        """
-
-        Returns:
-
-        """
-        m = self.shape[0]
-        n = self.shape[1]
-
-    def shift_right(self):
-        """
-
-        """
-        pass
-
-    def shift_down(self):
-        """
-
-        """
-        pass
-
-    def shift_up(self):
-        """
-
-        """
-        pass
 
     def set_tile(self, pt, val):
         """
@@ -154,6 +128,16 @@ class NDTile(np.ndarray):
 
         """
         self.itemset(pt, val)
+
+    def get_tile(self, pt):
+        """
+        Args:
+            pt:
+
+        Returns:
+
+        """
+        return self.item(pt)
 
     def inject_random(self):
         """
@@ -174,3 +158,27 @@ class NDTile(np.ndarray):
                 break
 
         self.set_tile(pt, Tile.base_tile)
+
+    def swap(self, to, fro):
+        """
+
+        Args:
+            to:
+            fro:
+
+        Returns:
+
+        """
+        pass
+
+    def merge(self, to, fro):
+        """
+
+        Args:
+            to:
+            fro:
+
+        Returns:
+
+        """
+        pass
