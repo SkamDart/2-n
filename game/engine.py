@@ -12,7 +12,6 @@ class Engine:
         """
         self._board = b
         self._end_score = _n
-        self._tiles = b.tiles
 
     @property
     def board(self):
@@ -33,7 +32,7 @@ class Engine:
         Returns:
 
         """
-        return m
+        return m != 0 and (m & (m - 1) == 0)
 
     def is_over(self):
         """
@@ -71,7 +70,12 @@ class Engine:
         Returns:
 
         """
-        move_type = Engine.parse_move(move)
+        move_type = None
+        while True:
+            move_type = Engine.parse_move(move)
+            if move_type is not None:
+                break
+            move = input('Invalid Input\n')
         self.board.shift(move_type)
 
     @classmethod
@@ -93,7 +97,7 @@ class Engine:
         elif move == 'l':
             return Move.RIGHT
         else:
-            return Engine.parse_move(input('Try Again\n'))
+            return None
 
 
 if __name__ == '__main__':

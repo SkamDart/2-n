@@ -23,6 +23,10 @@ class Board(object):
         return np.array_str(self.tiles)
 
     @property
+    def goal(self):
+        return self._goal
+
+    @property
     def tiles(self):
         """
 

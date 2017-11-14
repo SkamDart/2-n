@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d498c-bea8-40ba-803e-abb3254ff0ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/app/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/game/test_engine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/game/test_logic.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game/ndtile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/game/test_NDTile.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/game/color.py" afterPath="$PROJECT_DIR$/app/color.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/game/tile.py" afterPath="$PROJECT_DIR$/app/tile.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/game/test_tile.py" afterPath="$PROJECT_DIR$/test/app/test_tile.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/game/test_game.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/game/test_logic.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/board.py" afterPath="$PROJECT_DIR$/game/board.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/engine.py" afterPath="$PROJECT_DIR$/game/engine.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/game/test_board.py" afterPath="$PROJECT_DIR$/test/game/test_board.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/game/test_engine.py" afterPath="$PROJECT_DIR$/test/game/test_engine.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,18 +18,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_game.coverage" NAME="Unittests in game Coverage Results" MODIFIED="1510527498239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_board_py.coverage" NAME="Unittests in test_board.py Coverage Results" MODIFIED="1510180015284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/204py$board.coverage" NAME="board Coverage Results" MODIFIED="1510116138083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
-    <SUITE FILE_PATH="coverage/2pyn$Nosetests_for_test_NDTile_TestNDTile_test_zeros.coverage" NAME="Nosetests for test_NDTile.TestNDTile.test_zeros Coverage Results" MODIFIED="1510179999682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
-    <SUITE FILE_PATH="coverage/204py$tile.coverage" NAME="tile Coverage Results" MODIFIED="1510116198525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_board_TestBoard_test_board.coverage" NAME="Unittests for test_board.TestBoard.test_board Coverage Results" MODIFIED="1510161467914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test_NDTile_py.coverage" NAME="Unittests in test_NDTile.py Coverage Results" MODIFIED="1510181856919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
-    <SUITE FILE_PATH="coverage/2pyn$engine.coverage" NAME="engine Coverage Results" MODIFIED="1510528145720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/2pyn$engine.coverage" NAME="engine Coverage Results" MODIFIED="1510633312451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_in_game.coverage" NAME="Unittests in game Coverage Results" MODIFIED="1510633912757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Nosetests_for_test_NDTile_TestNDTile_test_zeros.coverage" NAME="Nosetests for test_NDTile.TestNDTile.test_zeros Coverage Results" MODIFIED="1510179999682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/204py$tile.coverage" NAME="tile Coverage Results" MODIFIED="1510116198525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2pyn/game" />
     <SUITE FILE_PATH="coverage/2pyn$tile__1_.coverage" NAME="tile (1) Coverage Results" MODIFIED="1510116499268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_engine_TestEngine.coverage" NAME="Unittests for test_engine.TestEngine Coverage Results" MODIFIED="1510633328728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Nosetests_in_game.coverage" NAME="Nosetests in game Coverage Results" MODIFIED="1510253216715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_in_test.coverage" NAME="Unittests in test Coverage Results" MODIFIED="1510527215661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_NDTile_TestNDTile_test_NDTile.coverage" NAME="Unittests for test_NDTile.TestNDTile.test_NDTile Coverage Results" MODIFIED="1510179995385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
+    <SUITE FILE_PATH="coverage/2pyn$Unittests_for_test_board_TestBoard.coverage" NAME="Unittests for test_board.TestBoard Coverage Results" MODIFIED="1510631562744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/game" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="2pyn" />
@@ -43,11 +40,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="engine.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="engine.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/game/engine.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="669">
-                  <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+                <state relative-caret-position="-697">
+                  <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -55,21 +52,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tile.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/tile.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="board.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/board.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1173">
-                  <caret line="188" column="22" lean-forward="false" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
+                <state relative-caret-position="-765">
+                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -80,13 +67,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="test_board.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="-127">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -94,8 +83,20 @@
           <file leaf-file-name="test_engine.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/game/test_engine.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+                <state relative-caret-position="272">
+                  <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/lib64/python3.4/unittest/case.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="166">
+                  <caret line="694" column="0" lean-forward="false" selection-start-line="694" selection-start-column="0" selection-end-line="694" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -147,10 +148,10 @@
         <option value="$PROJECT_DIR$/test/game/test_NDTile.py" />
         <option value="$PROJECT_DIR$/game/tile.py" />
         <option value="$PROJECT_DIR$/game/ndtile.py" />
+        <option value="$PROJECT_DIR$/test/game/test_logic.py" />
         <option value="$PROJECT_DIR$/game/board.py" />
         <option value="$PROJECT_DIR$/test/game/test_board.py" />
         <option value="$PROJECT_DIR$/test/game/test_game.py" />
-        <option value="$PROJECT_DIR$/test/game/test_logic.py" />
         <option value="$PROJECT_DIR$/test/game/test_engine.py" />
         <option value="$PROJECT_DIR$/game/engine.py" />
       </list>
@@ -183,8 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,7 +230,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -251,7 +252,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.engine">
+  <component name="RunManager" selected="Python tests.Unittests in game">
+    <configuration name="Unittests for test_board.TestBoard" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="204py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_board.TestBoard&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for test_engine.TestEngine" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="204py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_engine.TestEngine&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Unittests in game" type="tests" factoryName="Unittests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,21 +330,6 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in test_board.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="204py" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/game/test_board.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <configuration name="engine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -332,18 +348,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_board.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.engine" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.engine" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_engine.TestEngine" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.engine" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in game" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_engine.TestEngine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.engine" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_board.TestBoard" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test" />
       </list>
     </recent_temporary>
   </component>
@@ -361,49 +379,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_game - 2017.11.12 at 16h 55m 06s.xml">
+    <history-entry file="Unittests_for_test_board_TestBoard - 2017.11.13 at 21h 51m 10s.xml">
+      <configuration name="Unittests for test_board.TestBoard" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard - 2017.11.13 at 21h 51m 30s.xml">
+      <configuration name="Unittests for test_board.TestBoard" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard - 2017.11.13 at 21h 51m 56s.xml">
+      <configuration name="Unittests for test_board.TestBoard" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_board_TestBoard - 2017.11.13 at 21h 52m 42s.xml">
+      <configuration name="Unittests for test_board.TestBoard" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_engine_TestEngine - 2017.11.13 at 22h 22m 08s.xml">
+      <configuration name="Unittests for test_engine.TestEngine" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_game - 2017.11.13 at 22h 25m 39s.xml">
       <configuration name="Unittests in game" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_game - 2017.11.12 at 16h 58m 18s.xml">
+    <history-entry file="Unittests_in_game - 2017.11.13 at 22h 27m 09s.xml">
       <configuration name="Unittests in game" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test - 2017.11.12 at 16h 53m 36s.xml">
-      <configuration name="Unittests in test" configurationId="tests" />
+    <history-entry file="Unittests_in_game - 2017.11.13 at 22h 29m 35s.xml">
+      <configuration name="Unittests in game" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 49m 35s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 52m 22s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 53m 19s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 06s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 24s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 54m 49s.xml">
-      <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
+    <history-entry file="Unittests_in_game - 2017.11.13 at 22h 31m 57s.xml">
+      <configuration name="Unittests in game" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_NDTile_py - 2017.11.08 at 16h 57m 37s.xml">
       <configuration name="Unittests in test_NDTile.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="24" width="1090" height="1877" extended-state="6" />
+    <frame x="110" y="24" width="1930" height="1037" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43318966" sideWeight="0.5020855" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27771494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43318966" sideWeight="0.4979145" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22263451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22262774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -413,6 +432,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -444,20 +464,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game/engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/move.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -480,17 +492,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py" />
     <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -540,21 +545,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/ndtile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/game/ndtile.py" />
+    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py" />
     <entry file="file://$PROJECT_DIR$/app/tile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -742,44 +734,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/ndtile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="143" column="8" lean-forward="false" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/game/ndtile.py" />
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="188" column="22" lean-forward="false" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_NDTile.py" />
     <entry file="file://$PROJECT_DIR$/test/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/app/test_tile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/game/test_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -792,61 +799,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/move.py">
+    <entry file="file:///usr/lib64/python3.4/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="166">
+          <caret line="694" column="0" lean-forward="false" selection-start-line="694" selection-start-column="0" selection-end-line="694" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/app/test_tile.py">
+    <entry file="file://$PROJECT_DIR$/test/game/test_engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        <state relative-caret-position="-697">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/game/test_engine.py">
+    <entry file="file://$PROJECT_DIR$/game/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="-765">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
