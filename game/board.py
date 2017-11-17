@@ -5,14 +5,12 @@ from game.move import Move
 
 class Board(object):
 
-    def __init__(self, goal=2048, shape=(4, 4)):
+    def __init__(self, shape=(4, 4)):
         """Constructor
 
         Args:
-            goal:
             shape:
         """
-        self._goal = goal
         self._tiles = np.zeros(shape, dtype=np.int)
 
     def __str__(self):
@@ -21,10 +19,6 @@ class Board(object):
         :return:
         """
         return np.array_str(self.tiles)
-
-    @property
-    def goal(self):
-        return self._goal
 
     @property
     def tiles(self):

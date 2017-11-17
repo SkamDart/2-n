@@ -1,1 +1,1 @@
-all = ["board", "color", "engine", "move", "ndtile", "tile"]
+all = ["board", "engine", "tile"]
