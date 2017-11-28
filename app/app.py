@@ -1,6 +1,7 @@
 from tkinter import *
 import game.engine as eng
 import game.board as bd
+from game.move import Move
 
 
 class CONST:
@@ -23,13 +24,33 @@ class Game(Frame):
         self.create_menu()
         self.frame.grid(row=0, column=0, sticky="NSEW")
         self.create_tiles()
-        self.pack()
+
+    def update_tiles(self):
+        """
+
+        Returns:
+
+        """
+        x, y = self.board.tiles.shape
+
+        for i in range(x):
+            for j in range(y):
+                s = StringVar()
+                label = Button(self.frame,
+                               textvariable=s,
+                               height=CONST.TILE_HEIGHT,
+                               width=CONST.TILE_WIDTH)
+                s.set(str(self.board.tiles[x, y]))
+                label.grid(column=j, row=i)
 
     def create_tiles(self):
+        """Creates an 4 x 4 grid
+        Returns:
+
+        """
         Grid.grid_rowconfigure(self.frame, 0, weight=CONST.DEFAULT_WEIGHT)
         Grid.grid_columnconfigure(self.frame, 0, weight=CONST.DEFAULT_WEIGHT)
-        x = self.board.tiles.shape[0]
-        y = self.board.tiles.shape[1]
+        x, y = self.board.tiles.shape
 
         for i in range(x):
             Grid.columnconfigure(self.frame, i, weight=CONST.DEFAULT_WEIGHT)
@@ -67,18 +88,17 @@ class Game(Frame):
     def escape(e):
         sys.exit()
 
-    def up(self):
-        pass
-
-    def down(self):
-        pass
-
     def left(self):
         pass
 
     def right(self):
         pass
 
+    def up(self):
+        pass
+
+    def down(self):
+        pass
 
 def main():
     # create app
@@ -97,10 +117,16 @@ def main():
 
     # click handlers
     root.bind("<Escape>", app.escape)
-    root.bind("<Left>", app.left)
-    root.bind("<Right>", app.right)
-    root.bind("<Down>", app.down)
-    root.bind("<Up>", app.up)
+    root.bind("<Left>", app.board.shift(Move.LEFT))
+    root.bind("<Right>", app.board.shift(Move.RIGHT))
+    root.bind("<Down>", app.board.shift(Move.DOWN))
+    root.bind("<Up>", app.board.shift(Move.UP))
+    """
+    root.bind("<Left>", app.board.shift(Move.LEFT))
+    root.bind("<Right>", app.board.shift(Move.RIGHT))
+    root.bind("<Down>", app.board.shift(Move.DOWN))
+    root.bind("<Up>", app.board.shift(Move.UP))
+    """
 
     # control flow
     root.mainloop()

@@ -1,0 +1,4 @@
+1. Game Opens Cleanly
+2. Game Closes Using Esc Key
+3. Game renders 4 x 4 grid
+4. Test basic moves
