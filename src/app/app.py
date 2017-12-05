@@ -1,7 +1,7 @@
 from tkinter import *
 
-import game.board as bd
-import game.engine as eng
+import src.game.board as bd
+import src.game.engine as eng
 
 from src.game.move import Move
 

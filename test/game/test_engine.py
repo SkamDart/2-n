@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from game.board import Board
-from game.engine import Engine
+from src.game.board import Board
+from src.game.engine import Engine
 
 from src.game.move import Move
 

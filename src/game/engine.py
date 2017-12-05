@@ -5,7 +5,7 @@ from src.game.AI import AI, Player
 
 class Engine:
 
-    def __init__(self, b, _n, p):
+    def __init__(self, b, _n, p=Player.USER):
         """
 
         Args:
@@ -111,7 +111,10 @@ class Engine:
             return Move.UP
         elif move == 'l':
             return Move.RIGHT
-        elif move == Move.UP or Move.DOWN or Move.RIGHT or Move.LEFT:
+        elif move == Move.UP or \
+             move == Move.DOWN or \
+             move == Move.RIGHT or \
+             move == Move.LEFT:
             return move
         else:
             return None

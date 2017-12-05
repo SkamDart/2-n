@@ -131,6 +131,6 @@ class AI(object):
             linear_weighted_values[i] = weight_val
             critical_tiles.append(tile)
 
-        arg = np.argmax(linear_weighted_values)
-        return linear_weighted_values[arg], critical_tiles[arg]
-
+        critical_tiles = np.array(critical_tiles)
+        max_arg = np.argmax(linear_weighted_values)
+        return linear_weighted_values[max_arg], critical_tiles[max_arg]

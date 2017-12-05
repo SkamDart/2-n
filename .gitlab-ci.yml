@@ -1,0 +1,5 @@
+image: arwineap/docker-ubuntu-python3.6
+test:
+  script:
+  - pip install -r requirements.txt
+  - python setup.py test
