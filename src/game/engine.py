@@ -71,10 +71,8 @@ class Engine:
     def get_move(self):
         if self.player == Player.EASY:
             return AI.random_uniform()
-        elif self.player == Player.MEDIUM:
-            return AI.random_normal()
         elif self.player == Player.HARD:
-            return AI.random()
+            return AI.next_move(self.board)
         elif self.player == Player.USER:
             return input('\n')
 
@@ -113,6 +111,8 @@ class Engine:
             return Move.UP
         elif move == 'l':
             return Move.RIGHT
+        elif move == Move.UP or Move.DOWN or Move.RIGHT or Move.LEFT:
+            return move
         else:
             return None
 
@@ -121,5 +121,5 @@ if __name__ == '__main__':
     shape = (4, 4)
     n = 2048
     board = Board(shape)
-    engine = Engine(board, n, Player.EASY)
+    engine = Engine(board, n, Player.HARD)
     engine.start_game()

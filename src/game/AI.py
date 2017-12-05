@@ -1,10 +1,15 @@
 import numpy as np
+import copy
+from src.game.move import Move
 
 
 class Player:
     EASY = 'easy'
     USER = 'user'
     HARD = 'hard'
+
+
+moves = [Move.LEFT, Move.RIGHT, Move.DOWN, Move.UP]
 
 
 class AI(object):
@@ -33,85 +38,99 @@ class AI(object):
         else:
             return 'l'
 
-class SmartAI(object):
+    @staticmethod
+    def next_move(board, recursion_depth=3):
+        """
+        Wrapper for smart ai next move
+        Args:
+            board:
+            recursion_depth:
 
-    def __init__(self):
-        self.range4 = np.arange(4)
+        Returns:
 
-    def rotateRight(self, grid):
-        return [[grid[r][3 - c] for r in self.range4] for c in self.range4]
+        """
+        return AI.next_move_helper(board, recursion_depth, recursion_depth)[0]
 
-    def move_row(self, row):
-        out = [x for x in row if x]
-        ic = oc = 0
-        while out[ic:]:
-            if out[ic + 1:] and out[ic] == out[ic + 1]:
-                out[oc] = 2 * out[ic]
-                ic += 1
-            else:
-                out[oc] = out[ic]
-            ic += 1
-            oc += 1
-        out[oc:] = [None] * (4 - oc)
-        return out
+    @staticmethod
+    def next_move_helper(board, depth, max_depth, base=0.9):
+        """
 
-    def move(self, grid, rot):
-        for i in range(rot):
-            grid = self.rotateRight(grid)
-        out = map(self.move_row, grid)
-        return out, out != grid
+        Args:
+            board:
+            depth:
+            max_depth:
+            base:
 
-    def eval_monotone_L(self, grid):
-        L = 0
-        for x in self.range4:
-            m = 0
-            for y in range(3):
-                A = grid[x][y] or 0
-                B = grid[x][y + 1] or 0
-                if A and A >= B:
-                    m += 1
-                    L += m ** 2 * 4
-                else:
-                    L -= abs(A - B) * 1.5
-                    m = 0
-        return L
+        Returns:
 
-    def eval_monotone_LR(self, grid):
-        return np.max(self.eval_monotone_L(grid),
-                      self.eval_monotone_L(self.rotateRight(self.rotateRight(grid))))
+        """
+        best_score = -1.
+        best_move = 0
 
-    def eval_smoothness(self, grid):
-        return -np.sum(np.min(
-            [1e8] + [abs((grid[x][y] or 2) - (grid[x + a][y + b] or 2)) for a, b in ((-1, 0), (0, -1), (1, 0), (0, 1))
-                     if 0 <= x + a < 4 and 0 <= y + b < 4]) for x in range4 for y in range4)
+        for m in moves:
+            new_board = copy.deepcopy(board)
+            new_board.shift(m)
+            score, critical = AI.evaluate_best_move(new_board)
+            new_board.setCell(critical[0], critical[1], 2)
 
-    def count_free(grid):
-        return sum(r.count(None) for r in grid)
+            if depth != 0:
+                my_m, my_s = AI.next_move_helper(new_board, depth - 1, max_depth)
+                score += my_s * pow(base, max_depth - depth + 1)
 
-    def EVAL(self, grid):
-        return self.eval_monotone_LR(grid) \
-               + self.eval_monotone_LR(rotateRight(grid)) \
-               + self.val_smoothness(grid) \
-               - (16 - self.count_free(grid)) ** 2
+            if score > best_score:
+                best_move = m
+                best_score = score
 
-    def search_max(self, grid):
-        return max([self.EVAL(self.move(grid, m)[0]) for m in self.range4 if self.move(grid, m)[1]] + [-1e8])
+        return best_move, best_score
 
-    def search_min(grid):
-        scores = []
-        for i in range4:
-            row = grid[i]
-            for j in range4:
-                if not row[j]:
-                    score = all_p = 0
-                    for v, p in ((2, 9.), (4, 1)):
-                        if count_free(grid) <= 4 or p > 1:  # XXX hardcode for level=2
-                            row[j] = v
-                            score += p * search_max(grid)
-                            all_p += p
-                    row[j] = None
+    @staticmethod
+    def eval_linear_weight(board, common_ratio):
+        linear_weighted_val = 0
+        weight = 1.
+        critical_tile = (-1, -1)
+        invert = False
+        n = board.tiles.shape[0]
+        tiles = board.tiles
 
-                    scores.append(score / all_p)
+        for y in range(n):
+            for x in range(n):
+                b_x = x
+                b_y = y
 
-        return sum(scores) / len(scores)
+                if invert:
+                    b_x = n - 1 - x
+
+                curr_val = tiles[(b_x, b_y)]
+
+                if curr_val == 0 and critical_tile == (-1, -1):
+                    critical_tile = (b_x, b_y)
+
+                linear_weighted_val += curr_val * weight
+                weight *= common_ratio
+
+            invert = not invert
+
+        return linear_weighted_val, critical_tile
+
+    @staticmethod
+    def evaluate_best_move(board, common_ratio=0.25):
+        """
+        calculates best move for a board
+        Args:
+            board:
+            common_ratio:
+
+        Returns:
+
+        """
+        linear_weighted_values = np.zeros(8)
+        critical_tiles = []
+
+        for i in range(8):
+            weight_val, tile = AI.eval_linear_weight(board, common_ratio)
+            linear_weighted_values[i] = weight_val
+            critical_tiles.append(tile)
+
+        arg = np.argmax(linear_weighted_values)
+        return linear_weighted_values[arg], critical_tiles[arg]
 

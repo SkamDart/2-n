@@ -33,6 +33,19 @@ class Board(object):
     def tiles(self, tiles):
         self._tiles = tiles
 
+    @tiles.getter
+    def tiles(self):
+        return self._tiles
+
+    def size(self):
+        return self._tiles.shape[0]
+
+    def getCell(self, x, y):
+        return self.tiles[x, y]
+
+    def setCell(self, x, y, val):
+        self.tiles[x, y] = val
+
     @property
     def is_full(self):
         """
@@ -47,6 +60,7 @@ class Board(object):
         Returns:
         """
         print(self.tiles)
+        print('\n')
 
     def is_open(self, pt):
         """
@@ -189,22 +203,18 @@ class Board(object):
             direction:
         """
         if direction == Move.UP:
-            print(direction)
             self.vertical()
             self.merge_vertical()
             self.vertical()
         elif direction == Move.DOWN:
-            print(direction)
             self.vertical(1)
             self.merge_vertical(1)
             self.vertical(1)
         elif direction == Move.LEFT:
-            print(direction)
             self.move_zeros()
             self.merge()
             self.move_zeros()
         elif direction == Move.RIGHT:
-            print(direction)
             self.move_zeros(1)
             self.merge(1)
             self.move_zeros(1)
