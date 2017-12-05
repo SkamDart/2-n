@@ -1,7 +1,9 @@
 from tkinter import *
-import game.engine as eng
+
 import game.board as bd
-from game.move import Move
+import game.engine as eng
+
+from src.game.move import Move
 
 
 class CONST:

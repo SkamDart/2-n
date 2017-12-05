@@ -1,6 +1,6 @@
 import numpy as np
 
-from game.move import Move
+from src.game.move import Move
 
 
 class Board(object):

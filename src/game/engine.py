@@ -1,10 +1,11 @@
-from game.board import Board
-from game.move import Move
+from src.game.board import Board
+from src.game.move import Move
+from src.game.AI import AI, Player
 
 
 class Engine:
 
-    def __init__(self, b, _n):
+    def __init__(self, b, _n, p):
         """
 
         Args:
@@ -12,6 +13,7 @@ class Engine:
         """
         self._board = b
         self._end_score = _n
+        self._player = p
 
     @property
     def board(self):
@@ -21,6 +23,10 @@ class Engine:
 
         """
         return self._board
+
+    @property
+    def player(self):
+        return self._player
 
     @staticmethod
     def is_valid_score(m):
@@ -56,10 +62,21 @@ class Engine:
             if self.is_over():
                 break
 
-            move = input('\n')
+            # move = input('\n')
+            move = self.get_move()
             self.handle_move(move)
 
         print('Game Over!')
+
+    def get_move(self):
+        if self.player == Player.EASY:
+            return AI.random_uniform()
+        elif self.player == Player.MEDIUM:
+            return AI.random_normal()
+        elif self.player == Player.HARD:
+            return AI.random()
+        elif self.player == Player.USER:
+            return input('\n')
 
     def handle_move(self, move):
         """
@@ -89,7 +106,7 @@ class Engine:
 
         """
         if move == 'h':
-            return  Move.LEFT
+            return Move.LEFT
         elif move == 'j':
             return Move.DOWN
         elif move == 'k':
@@ -103,6 +120,6 @@ class Engine:
 if __name__ == '__main__':
     shape = (4, 4)
     n = 2048
-    board = Board(n, shape)
-    engine = Engine(board, n)
+    board = Board(shape)
+    engine = Engine(board, n, Player.EASY)
     engine.start_game()

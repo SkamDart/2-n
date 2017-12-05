@@ -1,5 +1,6 @@
 from unittest import TestCase
-from game.board import Board
+
+from src.game.board import Board
 
 
 class TestBoard(TestCase, object):
